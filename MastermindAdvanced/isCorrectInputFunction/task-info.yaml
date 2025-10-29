@@ -1,0 +1,26 @@
+type: edu
+custom_name: Mastermind Advanced - isCorrectInput Function
+files:
+  - name: src/main/kotlin/jetbrains/kotlin/course/mastermind/advanced/Main.kt
+    visible: true
+    learner_created: false
+  - name: src/main/kotlin/jetbrains/kotlin/course/mastermind/advanced/Util.kt
+    visible: false
+    learner_created: false
+  - name: test/MainClass.kt
+    visible: false
+    learner_created: false
+  - name: test/MastermindTestUtil.kt
+    visible: false
+    learner_created: false
+  - name: test/Methods.kt
+    visible: false
+    learner_created: false
+  - name: test/Tests.kt
+    visible: false
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 28 Oct 2025 15:26:40 UTC"
+record: 47

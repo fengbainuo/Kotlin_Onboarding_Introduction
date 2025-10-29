@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TermsProjectSettings">
+    <currentTermsLanguage>en</currentTermsLanguage>
+    <terms>
+      <map>
+        <entry key="en">
+          <value>
+            <map>
+              <entry key="13109812">
+                <value>
+                  <list>
+                    <Term value="Boolean" definition="A data type representing true or false values in Kotlin and many other languages." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="15384542">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The definition of a function, including its name, parameters, and return type." />
+                    <Term value="rectangle" definition="A four-sided shape with opposite sides equal, often used to describe a 2D grid or area in programming." />
+                    <Term value="horizontally" definition="In the left-to-right direction, often referring to how elements are arranged or repeated in a row." />
+                    <Term value="vertically" definition="In the top-to-bottom direction, often referring to how elements are arranged or repeated in a column." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="21668245">
+                <value>
+                  <list>
+                    <Term value="TODO" definition="A Kotlin function used to mark code as not yet implemented; throws a NotImplementedError." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="42223778">
+                <value>
+                  <list>
+                    <Term value="do" definition="A loop construct that executes its body at least once before checking the condition." />
+                    <Term value="while" definition="A loop construct that repeats execution while a condition remains true." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="68121813">
+                <value>
+                  <list>
+                    <Term value="random" definition="A function that generates a random value, often used for unpredictability in programs." />
+                    <Term value="List" definition="A built-in Kotlin collection that stores ordered elements and allows access by index." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="85088674">
+                <value>
+                  <list>
+                    <Term value="Char" definition="A data type representing a single character, such as a letter or digit." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="168358096">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The function's name, parameter types, and return type; defines how to call the function." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="172830079">
+                <value>
+                  <list>
+                    <Term value="readlnOrNull" definition="Kotlin function that reads a line of input from the user, returns null if input is unavailable." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="187571066">
+                <value>
+                  <list>
+                    <Term value="signatures" definition="The name, parameters, and return type of a function, without its implementation." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="192844197">
+                <value>
+                  <list>
+                    <Term value="reference" definition="A value that points to an object or memory location, rather than containing the actual data." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="214162757">
+                <value>
+                  <list>
+                    <Term value="entry point" definition="The starting function where program execution begins, typically called main in Kotlin." />
+                    <Term value="console" definition="A text-based interface for user interaction with a program, often used for input and output." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="223687468">
+                <value>
+                  <list>
+                    <Term value="function" definition="A reusable block of code that performs a specific task and can be called by name." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="230726355">
+                <value>
+                  <list>
+                    <Term value="error" definition="A function in Kotlin that throws an exception, terminating program execution with an error message." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="316297317">
+                <value>
+                  <list>
+                    <Term value="signature" definition="A function's name, parameters, and return type; defines how the function is called." />
+                    <Term value="built-in function" definition="A function provided by the programming language, available for immediate use." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="378596203">
+                <value>
+                  <list>
+                    <Term value="null safety" definition="A feature in Kotlin that helps prevent null pointer exceptions by distinguishing nullable and non-nullable types." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="410448577">
+                <value>
+                  <list>
+                    <Term value="String" definition="A data type in Kotlin used to represent sequences of characters." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="436171823">
+                <value>
+                  <list>
+                    <Term value="console" definition="A text-based interface for user input and output in a program." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="459293849">
+                <value>
+                  <list>
+                    <Term value="patternWidth" definition="The width, in characters, of a single line in the pattern." />
+                    <Term value="fillPatternRow" definition="A function that adjusts a pattern row to a specified width, usually by adding spaces." />
+                    <Term value="newLineSymbol" definition="A variable representing the character(s) used to indicate a new line in text." />
+                    <Term value="main" definition="The entry point function in Kotlin where program execution starts." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="468192544">
+                <value>
+                  <list>
+                    <Term value="readlnOrNull" definition="Reads a line of input from the user or returns null if input is not available." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="512051311">
+                <value>
+                  <list>
+                    <Term value="joinToString" definition="Kotlin function that concatenates elements of a collection into a single string with a separator." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="540878076">
+                <value>
+                  <list>
+                    <Term value="TODO" definition="A Kotlin function that throws a NotImplementedError, used as a placeholder for unfinished code." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="553514186">
+                <value>
+                  <list>
+                    <Term value="null" definition="A special value representing the absence of a value or object." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="553691845">
+                <value>
+                  <list>
+                    <Term value="when" definition="A Kotlin expression for conditional branching, similar to switch in other languages." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="554684746">
+                <value>
+                  <list>
+                    <Term value="Boolean" definition="A data type representing true or false values, commonly used for conditions in programming." />
+                    <Term value="Ranges" definition="A sequence of values with a defined start and end, often used in loops for iteration." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="563522277">
+                <value>
+                  <list>
+                    <Term value="console" definition="A text-based interface for user input and output, often used for debugging or interaction." />
+                    <Term value="argument" definition="A value supplied to a function or method when it is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="604688510">
+                <value>
+                  <list>
+                    <Term value="camel case" definition="A naming convention where each word after the first starts with a capital letter, no spaces or underscores." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="619115895">
+                <value>
+                  <list>
+                    <Term value="console application" definition="A program that interacts with users via text input and output in a command-line interface." />
+                    <Term value="interactive dialogue" definition="A program feature where the user and the application exchange messages in real time." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="669870424">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The function's name, parameters, and return type; describes how to call the function." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="692295510">
+                <value>
+                  <list>
+                    <Term value="variable" definition="A named storage location in memory that holds a value which can change during program execution." />
+                    <Term value="template expressions" definition="A way to embed variables or expressions inside string literals using the $ symbol in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="792095342">
+                <value>
+                  <list>
+                    <Term value="predefined pattern" definition="A pattern already provided by the program, not entered by the user." />
+                    <Term value="custom pattern" definition="A pattern defined and entered by the user, not pre-existing in the program." />
+                    <Term value="canvas" definition="A surface or area where images or graphics can be drawn programmatically." />
+                    <Term value="canvasGaps" definition="A variant of canvas generator that may introduce spaces or gaps in the pattern." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="819355706">
+                <value>
+                  <list>
+                    <Term value="Unit" definition="A special Kotlin type that indicates a function returns no meaningful value, similar to void in Java." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="857708508">
+                <value>
+                  <list>
+                    <Term value="IllegalStateException" definition="A runtime exception in Kotlin indicating that a method has been invoked at an illegal or inappropriate time." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="912657372">
+                <value>
+                  <list>
+                    <Term value="minOf" definition="Kotlin function that returns the smallest of the given values." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="919228894">
+                <value>
+                  <list>
+                    <Term value="refactoring" definition="The process of restructuring existing code without changing its external behavior to improve readability or maintainability." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="949232906">
+                <value>
+                  <list>
+                    <Term value="template expressions" definition="A way to embed variables or expressions inside a string using $ in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="957199675">
+                <value>
+                  <list>
+                    <Term value="expression" definition="A combination of variables, values, and operators that produces a result." />
+                    <Term value="println" definition="A Kotlin function that prints a message to the standard output, followed by a newline." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="965912956">
+                <value>
+                  <list>
+                    <Term value="marginPrefix" definition="A string used by trimMargin to identify and remove leading margin characters from each line." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="990585351">
+                <value>
+                  <list>
+                    <Term value="branch" definition="A possible path of execution in a program, often used in conditional statements like if-else." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="999114955">
+                <value>
+                  <list>
+                    <Term value="pad" definition="To add characters to a string to reach a desired length." />
+                    <Term value="split" definition="To divide a string into parts based on a delimiter." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1006365197">
+                <value>
+                  <list>
+                    <Term value="default value" definition="A value automatically assigned to a function argument if no value is provided by the caller." />
+                    <Term value="returned value" definition="The result that a function provides back to the code that called it." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1019379491">
+                <value>
+                  <list>
+                    <Term value="TODO" definition="A Kotlin function that throws a NotImplementedError to mark code as not yet implemented." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1021356481">
+                <value>
+                  <list>
+                    <Term value="readlnOrNull" definition="Kotlin function that reads a line from standard input or returns null if input ends." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1120394004">
+                <value>
+                  <list>
+                    <Term value="throw" definition="Used to signal an exception or error during program execution in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1152431309">
+                <value>
+                  <list>
+                    <Term value="sequence" definition="An ordered collection of elements, often used to represent data like characters in a string." />
+                    <Term value="element" definition="A single item within a collection, such as a list or array." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1166766094">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The function's name, parameters, and return type; defines how the function is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1190201896">
+                <value>
+                  <list>
+                    <Term value="types" definition="A classification that specifies which kind of value a variable can hold." />
+                    <Term value="integer" definition="A whole number, positive or negative, without decimals." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1229192821">
+                <value>
+                  <list>
+                    <Term value="when expressions" definition="A Kotlin control structure for branching logic, similar to switch-case in other languages." />
+                    <Term value="string builder" definition="A mutable object for efficiently building or modifying strings in Kotlin." />
+                    <Term value="null safety" definition="Kotlin's feature to prevent null pointer exceptions by handling nullable types explicitly." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1229753076">
+                <value>
+                  <list>
+                    <Term value="lambda expression" definition="A function without a name, often used for short, inline operations." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1240099384">
+                <value>
+                  <list>
+                    <Term value="newLineSymbol" definition="Represents the character(s) used to mark the end of a line in text." />
+                    <Term value="getPatternWidth" definition="Function that returns the width of a pattern, usually as the number of characters per row." />
+                    <Term value="getPatternHeight" definition="Function that returns the height of a pattern, usually as the number of rows." />
+                    <Term value="repeatHorizontally" definition="Function that repeats a pattern horizontally a specified number of times in a string." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1278662430">
+                <value>
+                  <list>
+                    <Term value="variable" definition="A named storage location in code that holds a value which can change during execution." />
+                    <Term value="function" definition="A reusable block of code that performs a specific task and can return a value." />
+                    <Term value="loop" definition="A control structure that repeats a block of code while a condition is true." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1284940740">
+                <value>
+                  <list>
+                    <Term value="signature" definition="A function's name, parameter types, and return type; defines how the function is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1290076994">
+                <value>
+                  <list>
+                    <Term value="filter" definition="A function that returns elements matching a condition from a collection or string." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1298754091">
+                <value>
+                  <list>
+                    <Term value="list" definition="An ordered collection of elements that can be accessed by their index." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1368513525">
+                <value>
+                  <list>
+                    <Term value="when" definition="Kotlin's conditional expression, similar to switch in other languages, for branching logic based on value." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1441227087">
+                <value>
+                  <list>
+                    <Term value="do-while" definition="A loop that executes its block at least once before checking its condition." />
+                    <Term value="Boolean" definition="A data type representing true or false values." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1444969308">
+                <value>
+                  <list>
+                    <Term value="lambda expressions" definition="Anonymous functions that can be used as values or passed as arguments to functions." />
+                    <Term value="List" definition="An ordered collection of elements, allowing duplicates and accessed by index." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1477657219">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The definition of a function, including its name, parameters, and return type." />
+                    <Term value="argument" definition="A value passed to a function when it is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1479688163">
+                <value>
+                  <list>
+                    <Term value="random" definition="Unpredictable value or selection, often generated by a computer using algorithms." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1496648535">
+                <value>
+                  <list>
+                    <Term value="functions" definition="A reusable block of code that performs a specific task and can return a value." />
+                    <Term value="arguments" definition="Values passed to a function when it is called, used as input parameters." />
+                    <Term value="returns" definition="Specifies the value or result that a function provides after execution." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1609671976">
+                <value>
+                  <list>
+                    <Term value="safe call operator" definition="Kotlin operator (?.) that executes an action only if the object is not null." />
+                    <Term value="scope function" definition="A Kotlin function that executes a block of code within the context of an object." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1629287997">
+                <value>
+                  <list>
+                    <Term value="edge cases" definition="Situations that occur at the extreme ends or boundaries of input or operation." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1632845494">
+                <value>
+                  <list>
+                    <Term value="operator" definition="A symbol or keyword that performs an operation on one or more operands." />
+                    <Term value="branches" definition="Alternative code paths in control flow statements like if or when." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1642783440">
+                <value>
+                  <list>
+                    <Term value="signature" definition="A function's name, parameters, and return type; defines how the function is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1651787790">
+                <value>
+                  <list>
+                    <Term value="lambda expression" definition="An anonymous function that can be passed as an argument or assigned to a variable." />
+                    <Term value="withIndex" definition="Kotlin function that returns an iterable of index-value pairs from a collection." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1676423900">
+                <value>
+                  <list>
+                    <Term value="project" definition="A collection of source code files and resources organized to build a software application." />
+                    <Term value="tasks" definition="A specific piece of work or assignment to be completed as part of a project." />
+                    <Term value="documentation" definition="Official written descriptions and explanations of a programming language, library, or tool." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1691431341">
+                <value>
+                  <list>
+                    <Term value="expression" definition="A combination of variables, values, and operators that produces a result." />
+                    <Term value="branch" definition="A section of code executed depending on a condition, such as 'if' or 'else' parts." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1725484953">
+                <value>
+                  <list>
+                    <Term value="separator" definition="A character or string used to divide elements when joining them into a single string." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1826732352">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The function's name, parameter types, and return type; defines how to call the function." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1835776409">
+                <value>
+                  <list>
+                    <Term value="StringBuilder" definition="A mutable sequence of characters used to efficiently build or modify strings in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1840247486">
+                <value>
+                  <list>
+                    <Term value="signature" definition="The definition of a function's name, parameters, and return type." />
+                    <Term value="arguments" definition="Values passed to a function when it is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1843240451">
+                <value>
+                  <list>
+                    <Term value="IDE" definition="Integrated Development Environment, a software application for writing, running, and debugging code." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1847786086">
+                <value>
+                  <list>
+                    <Term value="filter" definition="A collection function that returns elements matching a given condition." />
+                    <Term value="Char" definition="A data type representing a single 16-bit Unicode character in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1948062985">
+                <value>
+                  <list>
+                    <Term value="separator" definition="A character or string used to separate elements, such as spaces between letters in a displayed word." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="1988905602">
+                <value>
+                  <list>
+                    <Term value="signatures" definition="A function's name, parameters, and return type; describes how to call the function." />
+                    <Term value="TODO" definition="A special Kotlin function that marks code as not yet implemented and throws a NotImplementedError." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2030724675">
+                <value>
+                  <list>
+                    <Term value="argument" definition="A value passed to a function when it is called." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2042704900">
+                <value>
+                  <list>
+                    <Term value="throw" definition="Used to signal an exception or error during program execution in Kotlin." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2065245492">
+                <value>
+                  <list>
+                    <Term value="nullable" definition="A type that can hold either a value or null, indicated by a question mark (?)." />
+                    <Term value="Elvis operator" definition="A Kotlin operator (?:) that provides a default value if an expression is null." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2085825446">
+                <value>
+                  <list>
+                    <Term value="joinToString" definition="Kotlin function that joins elements of a collection into a single string with a separator." />
+                    <Term value="list" definition="Kotlin collection type representing an ordered group of elements, accessible by index." />
+                  </list>
+                </value>
+              </entry>
+              <entry key="2128193824">
+                <value>
+                  <list>
+                    <Term value="implement" definition="To write and develop the code needed to create a specific functionality or program." />
+                  </list>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
+      </map>
+    </terms>
+    <termsVersions>
+      <map>
+        <entry key="en" value="97" />
+      </map>
+    </termsVersions>
+  </component>
+</project>
