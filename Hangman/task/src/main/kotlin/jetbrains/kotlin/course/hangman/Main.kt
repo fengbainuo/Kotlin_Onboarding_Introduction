@@ -23,7 +23,7 @@ fun isLost(complete: Boolean, attempts: Int, maxAttemptsCount: Int) = !complete 
 
 fun main() {
     // Uncomment this code on the last step of the game
-
+    println(playGame(generateSecret(), maxAttemptsCount))
     // println(getGameRules(wordLength, maxAttemptsCount))
     // playGame(generateSecret(), maxAttemptsCount)
 }

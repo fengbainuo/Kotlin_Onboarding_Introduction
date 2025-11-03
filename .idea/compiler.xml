@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="24">
+    <bytecodeTargetLevel target="21">
       <module name="CSC_Kotlin_Course.AlmostDone-task.main" target="11" />
       <module name="CSC_Kotlin_Course.AlmostDone-task.test" target="11" />
       <module name="CSC_Kotlin_Course.Chat-task.main" target="11" />

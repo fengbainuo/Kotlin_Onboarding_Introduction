@@ -5,3 +5,17 @@ fun main() {
 
     // photoshop()
 }
+
+fun trimPicture(picture: String): String = picture.trimIndent()
+
+fun applyBordersFilter(picture: String): String = TODO("Not implemented yet")
+
+fun applySquaredFilter(picture: String): String = TODO("Not implemented yet")
+
+fun applyFilter(picture: String, filter: String): String {
+    return when (filter) {
+        "borders" -> applyBordersFilter(picture)
+        "squared" -> applySquaredFilter(picture)
+        else -> error("Unexpected filter")
+    }
+}

@@ -10,6 +10,6 @@ files:
   - name: src/main/kotlin/jetbrains/kotlin/course/almost/done/PreDefinedSymbols.kt
     visible: false
     learner_created: false
-status: Unchecked
-record: -1
+status: Solved
+record: 5
 post_submission_on_open: true
