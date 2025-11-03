@@ -20,5 +20,11 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScylICclQIi9_YDjO7iuyRITDLn0Qgzw_aLxKxiishKAbL0qg/viewform?usp=pp_url&entry.2103429047=Introduction/Hangman/Finish+the+game
-status: Unchecked
+status: Failed
+feedback:
+  message: You are asking the user to enter data fewer times than required in the
+    task!
+  time: "Mon, 03 Nov 2025 13:38:10 UTC"
+  expected: "true"
+  actual: "false"
 record: -1

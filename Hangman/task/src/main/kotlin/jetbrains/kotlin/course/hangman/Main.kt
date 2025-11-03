@@ -78,5 +78,10 @@ fun getRoundResults(secret: String, guess: Char, currentUserWord: String): Strin
 }
 
 fun playGame(secret: String, maxAttemptsCount: Int): Unit {
-
+    val guess: Char = safeUserInput()
+    val attempts = 0
+    var currentUserWord: String = ""
+    do {
+        val currentGuess = getRoundResults(secret, guess, currentUserWord)
+    } while (!isComplete(secret, currentGuess))
 }
