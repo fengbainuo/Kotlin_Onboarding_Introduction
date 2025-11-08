@@ -122,7 +122,7 @@ fun photoshop(): Unit {
     val picture = getPicture()
     val filter = chooseFilter()
     println("The old image:")
-    println(getPicture())
+    println(trimPicture(picture))
     println("The transformed picture:")
-    println(applyFilter(picture, filter))
+    println(applyFilter(trimPicture(picture), filter))
 }

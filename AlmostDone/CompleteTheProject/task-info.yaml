@@ -23,14 +23,8 @@ files:
     visible: false
     learner_created: false
 feedback_link: https://docs.google.com/forms/d/e/1FAIpQLScylICclQIi9_YDjO7iuyRITDLn0Qgzw_aLxKxiishKAbL0qg/viewform?usp=pp_url&entry.2103429047=Introduction/Almost+done/Finish+the+game
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Try to run the main function with the user input: yes
-    simba
-    borders
-    , the function must process the input and exit, but the current version of the function throws an unexpected error, please, check the function&#39;s implementation.
-  time: "Sat, 08 Nov 2025 09:35:24 UTC"
-  expected: "true"
-  actual: "false"
+  message: Congratulations!
+  time: "Sat, 08 Nov 2025 14:19:46 UTC"
 record: -1
