@@ -1,5 +1,7 @@
 package jetbrains.kotlin.course.last.push
 
+import org.intellij.lang.annotations.Pattern
+
 // You will use this function later
 fun getPattern(): String {
     println(
@@ -67,3 +69,5 @@ fun main() {
     // println("The generated image:")
     // println(applyGenerator(pattern, generatorName, width, height))
 }
+
+fun getPatternHeight(pattern: String): Int = pattern.lines().size
