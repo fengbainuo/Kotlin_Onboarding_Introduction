@@ -1,4 +1,5 @@
 import jetbrains.kotlin.course.last.push.ball
+import jetbrains.kotlin.course.last.push.getPatternWidth
 import jetbrains.kotlin.course.last.push.newLineSymbol
 import org.jetbrains.academy.test.system.core.invokeWithArgs
 import org.jetbrains.academy.test.system.core.models.classes.findClassSafe
@@ -9,9 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource
-import util.HandleNotImplementedError
-import util.HandleNotImplementedErrorExtension
-import util.throwInternalCourseError
+import util.*
 import java.lang.reflect.InvocationTargetException
 
 @HandleNotImplementedError
@@ -31,6 +30,31 @@ class Test {
         fun beforeAll() {
             mainClazz = mainClass.findClassSafe() ?: throwInternalCourseError()
         }
+
+        @JvmStatic
+        fun repeatHorizontallyArguments() = canvas().filter{ (p, f) ->
+            f.height == 1
+        }.toArguments()
+    }
+
+    @Test
+    fun repeatHorizontallyFunction() {
+        mainClass.checkMethod(mainClazz, repeatHorizontallyMethod)
+    }
+
+    @ParameterizedTest
+    @MethodSource("repeatHorizontallyArguments")
+    fun repeatHorizontallyFunctionImplementation(
+        pattern: String,
+        canvasFilter: Filter
+    ) {
+        val userMethod = mainClass.findMethod(mainClazz, repeatHorizontallyMethod)
+        val patternWidth = getPatternWidth(pattern)
+        val actualResult = userMethod.invokeWithArgs(pattern, canvasFilter.width, patternWidth, clazz = mainClazz).toString()
+        Assertions.assertEquals(
+            canvasFilter.result.replaceLineSeparator().removeSuffix(System.lineSeparator()),
+            actualResult.replaceLineSeparator().removeSuffix(System.lineSeparator())
+        ) { "The method ${repeatHorizontallyMethod.name} with arguments pattern=$pattern, n=${canvasFilter.width}, patternWidth=$patternWidth should return:${System.lineSeparator()}${canvasFilter.result}${System.lineSeparator()}But it returns:${System.lineSeparator()}$actualResult" }
     }
 
     @Test

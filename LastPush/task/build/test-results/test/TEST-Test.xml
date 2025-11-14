@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-11-08T14:25:27.319Z" hostname="wayfinder" time="0.357">
+<testsuite name="Test" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-11-14T08:31:32.831Z" hostname="wayfinder" time="0.308">
   <properties/>
-  <testcase name="[1] ○, 1" classname="Test" time="0.062"/>
-  <testcase name="[2]  X&#10;/ \&#10;\ /&#10; X, 4" classname="Test" time="0.002"/>
-  <testcase name="[3]   ____   &#10; /    \&#10;/ /  \ \&#10;\ \__/ /&#10; \____/, 5" classname="Test" time="0.002"/>
+  <testcase name="[1] , 5,      " classname="Test" time="0.045"/>
+  <testcase name="[2] ○, 5, ○    " classname="Test" time="0.002"/>
+  <testcase name="[3] ○○, 5, ○○   " classname="Test" time="0.001"/>
+  <testcase name="[4] ○○○, 5, ○○○  " classname="Test" time="0.001"/>
+  <testcase name="[5] ○○○○, 5, ○○○○ " classname="Test" time="0.002"/>
+  <testcase name="[6] ○○○○○, 5, ○○○○○" classname="Test" time="0.002"/>
+  <testcase name="fillPatternRowFunction()" classname="Test" time="0.219"/>
+  <testcase name="[1] ○, 1" classname="Test" time="0.004"/>
+  <testcase name="[2]  X&#10;/ \&#10;\ /&#10; X, 4" classname="Test" time="0.001"/>
+  <testcase name="[3]   ____   &#10; /    \&#10;/ /  \ \&#10;\ \__/ /&#10; \____/, 5" classname="Test" time="0.001"/>
   <testcase name="[4] +---+---+&#10;| o   o |&#10;|   ^   |&#10;|  ---  |&#10;+---+---+, 5" classname="Test" time="0.002"/>
-  <testcase name="[5]    .+------+&#10; .' |    .'|&#10;+---+--+'  |&#10;|   |  |   |&#10;|  ,+--+---+&#10;|.'    | .' &#10;+------+', 7" classname="Test" time="0.002"/>
-  <testcase name="getPatternHeightFunction()" classname="Test" time="0.274"/>
+  <testcase name="[5]    .+------+&#10; .' |    .'|&#10;+---+--+'  |&#10;|   |  |   |&#10;|  ,+--+---+&#10;|.'    | .' &#10;+------+', 7" classname="Test" time="0.001"/>
+  <testcase name="getPatternHeightFunction()" classname="Test" time="0.002"/>
+  <testcase name="fillPatternRowErrorCase()" classname="Test" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

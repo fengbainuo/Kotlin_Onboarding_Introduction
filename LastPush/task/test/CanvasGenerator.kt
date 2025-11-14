@@ -14,6 +14,16 @@ internal val canvasGeneratorMethod = TestMethod(
     ),
 )
 
+internal val repeatHorizontallyMethod = TestMethod(
+    "repeatHorizontally",
+    TestKotlinType("String"),
+    listOf(
+        TestVariable("pattern", "String"),
+        TestVariable("n", "Int"),
+        TestVariable("patternWidth", "Int"),
+    ),
+)
+
 internal fun canvas() = Pattern.values()
     .flatMap { f -> f.canvasFilters.map { f.pattern to it } }
 

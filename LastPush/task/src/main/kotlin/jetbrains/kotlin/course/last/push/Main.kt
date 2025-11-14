@@ -71,3 +71,16 @@ fun main() {
 }
 
 fun getPatternHeight(pattern: String): Int = pattern.lines().size
+
+fun fillPatternRow(patternRow: String, patternWidth: Int): String {
+    val builder = StringBuilder()
+    builder.append(patternRow)
+    if (patternRow.length > patternWidth) {
+        error("IllegalStateException")
+    }
+    repeat(patternWidth - patternRow.length) {
+        builder.append("$separator")
+    }
+    val newPattern = builder.toString()
+    return newPattern
+}
