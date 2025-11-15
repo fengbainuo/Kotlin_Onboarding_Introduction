@@ -125,6 +125,87 @@ fun canvasGenerator(pattern: String, width: Int, height: Int): String {
         builder.append("$newLineSymbol")
         builder.append(dropTop)
     }
-    val newRow = builder.toString()
-    return repeatHorizontally(newRow, width, patternWidth)
+    val newColumn = builder.toString()
+    return repeatHorizontally(newColumn, width, patternWidth)
+}
+
+fun canvasWithGapsGenerator(pattern: String, width: Int, height: Int): String {
+    if (height == 1) {
+        return repeatHorizontallyWithGaps(pattern, width).dropLast(1)
+    } else if (width == 1) {
+        val columnBuilder = StringBuilder()
+        repeat (height) {
+            columnBuilder.append("$pattern$newLineSymbol")
+        }
+        val newColumn = columnBuilder.toString()
+        return newColumn.dropLast(1)
+    }
+    val newPatternBuilder = StringBuilder()
+    var i = height
+    while (i > 0) {
+        if (i % 2 != 0) {
+            newPatternBuilder.append(repeatHorizontallyWithGaps(pattern, width))
+        } else {
+            newPatternBuilder.append(repeatHorizontallyWithGapsEvenLine(pattern, width))
+        }
+        i -= 1
+    }
+    val newPattern = newPatternBuilder.toString()
+    return newPattern
+}
+
+fun createEmptyPattern(pattern: String): String {
+    val patternWidth = getPatternWidth(pattern)
+    val patternHeight = getPatternHeight(pattern)
+    val builder = StringBuilder()
+    repeat(patternWidth) {
+        builder.append(" ")
+    }
+    builder.append("$newLineSymbol")
+    val newLine = builder.toString()
+    val patternBuilder = StringBuilder()
+    repeat(patternHeight) {
+        patternBuilder.append(newLine)
+    }
+    val emptyPattern = patternBuilder.toString()
+    return emptyPattern
+}
+
+fun repeatHorizontallyWithGaps(pattern: String, n: Int): String {
+    if (n == 1) {
+        return "$pattern$newLineSymbol"
+    }
+    val repeated = StringBuilder()
+    repeated.append(pattern)
+    var i = n-1
+    while (i > 0) {
+        if (i % 2 != 0) {
+            repeated.append(pattern)
+        } else {
+            repeated.append(createEmptyPattern(pattern))
+        }
+        i -= 0
+    }
+    repeated.append("$newLineSymbol")
+    val oddRow = repeated.toString()
+    return oddRow
+}
+
+fun repeatHorizontallyWithGapsEvenLine(pattern: String, n: Int): String {
+    if (n == 1) {
+        return "${createEmptyPattern(pattern)}$newLineSymbol"
+    }
+    val repeated = StringBuilder()
+    var i = n
+    while (i > 0) {
+        if (i % 2 == 0) {
+            repeated.append(pattern)
+        } else {
+            repeated.append(createEmptyPattern(pattern))
+        }
+        i -= 1
+    }
+    repeated.append("$newLineSymbol")
+    val evenRow = repeated.toString()
+    return evenRow
 }
