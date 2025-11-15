@@ -111,3 +111,20 @@ fun dropTopLine(image: String, width: Int, patternHeight: Int, patternWidth: Int
     val newImage = lines.drop(1)
     return newImage.joinToString("$newLineSymbol")
 }
+
+fun canvasGenerator(pattern: String, width: Int, height: Int): String {
+    val patternWidth = getPatternWidth(pattern)
+    val patternHeight = getPatternHeight(pattern)
+    if (height == 1) {
+        return repeatHorizontally(pattern, width, patternWidth)
+    }
+    val builder = StringBuilder()
+    builder.append(pattern)
+    repeat(height-1) {
+        val dropTop = dropTopLine(pattern, patternWidth, patternHeight, patternWidth)
+        builder.append("$newLineSymbol")
+        builder.append(dropTop)
+    }
+    val newRow = builder.toString()
+    return repeatHorizontally(newRow, width, patternWidth)
+}

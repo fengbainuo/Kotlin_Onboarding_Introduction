@@ -27,6 +27,9 @@ class Test {
         @JvmStatic
         fun canvasArguments() = canvas().toArguments()
 
+        @JvmStatic
+        fun canvasWithGapsArguments() = canvasWithGaps().toArguments()
+
         private lateinit var mainClazz: Class<*>
 
         @JvmStatic
@@ -45,21 +48,18 @@ class Test {
     }
 
     @Test
-    fun canvasGeneratorFunction() {
-        mainClass.checkMethod(mainClazz, canvasGeneratorMethod)
+    fun canvasWithGapsGeneratorFunction() {
+        mainClass.checkMethod(mainClazz, canvasWithGapsGeneratorMethod)
     }
 
     @ParameterizedTest
-    @MethodSource("canvasArguments")
-    fun canvasGeneratorImplementation(
-        pattern: String,
-        canvasFilter: Filter,
-    ) {
-        val userMethod = mainClass.findMethod(mainClazz, canvasGeneratorMethod)
+    @MethodSource("canvasWithGapsArguments")
+    fun canvasWithGapsGeneratorImplementation(pattern: String, canvasFilter: Filter) {
+        val userMethod = mainClass.findMethod(mainClazz, canvasWithGapsGeneratorMethod)
         Assertions.assertEquals(
-            canvasFilter.result.replaceLineSeparator().trimIndent(),
-            userMethod.invokeWithArgs(pattern.replaceLineSeparator(), canvasFilter.width, canvasFilter.height, clazz = mainClazz).toString().trimIndent(),
-            "For pattern:$newLineSymbol$pattern$newLineSymbol, width=${canvasFilter.width}, and height=${canvasFilter.height} the function ${canvasGeneratorMethod.name} should return $newLineSymbol${canvasFilter.result}$newLineSymbol"
+            canvasFilter.result.toAddNewLineSymbol().replaceLineSeparator().trimIndent(),
+            userMethod.invokeWithArgs(pattern, canvasFilter.width, canvasFilter.height, clazz = mainClazz).toString().trimIndent(),
+            "For pattern:$newLineSymbol$pattern$newLineSymbol, width=${canvasFilter.width}, and height=${canvasFilter.height} the function ${canvasWithGapsGeneratorMethod.name} should return $newLineSymbol${canvasFilter.result}$newLineSymbol"
         )
     }
 
@@ -77,7 +77,7 @@ class Test {
         val userMethod = mainClass.findMethod(mainClazz, dropTopLineMethod)
         val patternWidth = getPatternWidth(image)
         val patternHeight = getPatternHeight(image)
-        val actualResult = userMethod.invokeWithArgs(image.replaceLineSeparator(), 1, patternHeight, patternWidth, clazz = mainClazz).toString()
+        val actualResult = userMethod.invokeWithArgs(image, 1, patternHeight, patternWidth, clazz = mainClazz).toString()
         val error = "The method ${dropTopLineMethod.name} with arguments image=${newLineSymbol}$image${newLineSymbol}, width=1, patternHeight=$patternHeight, patternWidth=$patternWidth should return$newLineSymbol$expected${newLineSymbol}But it returns$newLineSymbol$actualResult"
         Assertions.assertEquals(
             expected.replaceLineSeparator(),
@@ -106,17 +106,29 @@ class Test {
     }
 
     @Test
+    fun canvasGeneratorFunction() {
+        mainClass.checkMethod(mainClazz, canvasGeneratorMethod)
+    }
+
+    @ParameterizedTest
+    @MethodSource("canvasArguments")
+    fun canvasGeneratorImplementation(pattern: String, canvasFilter: Filter) {
+        val userMethod = mainClass.findMethod(mainClazz, canvasGeneratorMethod)
+        Assertions.assertEquals(
+            canvasFilter.result.toAddNewLineSymbol().replaceLineSeparator().trimIndent(),
+            userMethod.invokeWithArgs(pattern, canvasFilter.width, canvasFilter.height, clazz = mainClazz).toString().trimIndent(),
+            "For pattern:$newLineSymbol$pattern$newLineSymbol, width=${canvasFilter.width}, and height=${canvasFilter.height} the function ${canvasGeneratorMethod.name} should return $newLineSymbol${canvasFilter.result}$newLineSymbol"
+        )
+    }
+
+    @Test
     fun fillPatternRowFunction() {
         mainClass.checkMethod(mainClazz, fillPatternRowMethod)
     }
 
     @ParameterizedTest
     @MethodSource("patternRows")
-    fun fillPatternRowImplementation(
-        patternRow: String,
-        patternWidth: Int,
-        expectedRow: String
-    ) {
+    fun fillPatternRowImplementation(patternRow: String, patternWidth: Int, expectedRow: String) {
         val userMethod = mainClass.findMethod(mainClazz, fillPatternRowMethod)
         Assertions.assertEquals(
             expectedRow, userMethod.invokeWithArgs(patternRow, patternWidth, clazz = mainClazz),
@@ -144,10 +156,7 @@ class Test {
 
     @ParameterizedTest
     @MethodSource("patternHeights")
-    fun getPatternHeightImplementation(
-        pattern: String,
-        patternHeight: Int,
-    ) {
+    fun getPatternHeightImplementation(pattern: String, patternHeight: Int) {
         val userMethod = mainClass.findMethod(mainClazz, getPatternHeightMethod)
         Assertions.assertEquals(
             patternHeight, userMethod.invokeWithArgs(pattern, clazz = mainClazz),
