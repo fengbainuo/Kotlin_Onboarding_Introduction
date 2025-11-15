@@ -31,5 +31,8 @@ files:
   - name: test/DropTopLine.kt
     visible: false
     learner_created: false
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 15 Nov 2025 09:29:09 UTC"
+record: 24

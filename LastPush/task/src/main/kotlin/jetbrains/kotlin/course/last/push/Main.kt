@@ -102,3 +102,12 @@ fun repeatHorizontally(pattern: String, n: Int, patternWidth: Int): String {
     val newPattern = builder.toString()
     return newPattern
 }
+
+fun dropTopLine(image: String, width: Int, patternHeight: Int, patternWidth: Int): String {
+    if (patternHeight == 1) {
+        return image
+    }
+    val lines = image.lines()
+    val newImage = lines.drop(1)
+    return newImage.joinToString("$newLineSymbol")
+}

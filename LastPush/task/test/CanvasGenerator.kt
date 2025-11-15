@@ -1,8 +1,8 @@
 import jetbrains.kotlin.course.last.push.newLineSymbol
+import org.junit.jupiter.params.provider.Arguments
 import org.jetbrains.academy.test.system.core.models.TestKotlinType
 import org.jetbrains.academy.test.system.core.models.method.TestMethod
 import org.jetbrains.academy.test.system.core.models.variable.TestVariable
-import org.junit.jupiter.params.provider.Arguments
 
 internal val canvasGeneratorMethod = TestMethod(
     "canvasGenerator",

@@ -1,4 +1,7 @@
-import jetbrains.kotlin.course.last.push.*
+import jetbrains.kotlin.course.last.push.ball
+import jetbrains.kotlin.course.last.push.getPatternHeight
+import jetbrains.kotlin.course.last.push.getPatternWidth
+import jetbrains.kotlin.course.last.push.newLineSymbol
 import org.jetbrains.academy.test.system.core.invokeWithArgs
 import org.jetbrains.academy.test.system.core.models.classes.findClassSafe
 import org.junit.jupiter.api.Assertions
@@ -21,6 +24,9 @@ class Test {
         @JvmStatic
         fun patternHeights() = Pattern.values().map { Arguments.of(it.pattern, it.height) }
 
+        @JvmStatic
+        fun canvasArguments() = canvas().toArguments()
+
         private lateinit var mainClazz: Class<*>
 
         @JvmStatic
@@ -30,12 +36,31 @@ class Test {
         }
 
         @JvmStatic
+        fun dropTopLineDataArguments() = dropTopLineData
+
+        @JvmStatic
         fun repeatHorizontallyArguments() = canvas().filter{ (p, f) ->
             f.height == 1
         }.toArguments()
+    }
 
-        @JvmStatic
-        fun dropTopLineDataArguments() = dropTopLineData
+    @Test
+    fun canvasGeneratorFunction() {
+        mainClass.checkMethod(mainClazz, canvasGeneratorMethod)
+    }
+
+    @ParameterizedTest
+    @MethodSource("canvasArguments")
+    fun canvasGeneratorImplementation(
+        pattern: String,
+        canvasFilter: Filter,
+    ) {
+        val userMethod = mainClass.findMethod(mainClazz, canvasGeneratorMethod)
+        Assertions.assertEquals(
+            canvasFilter.result.replaceLineSeparator().trimIndent(),
+            userMethod.invokeWithArgs(pattern.replaceLineSeparator(), canvasFilter.width, canvasFilter.height, clazz = mainClazz).toString().trimIndent(),
+            "For pattern:$newLineSymbol$pattern$newLineSymbol, width=${canvasFilter.width}, and height=${canvasFilter.height} the function ${canvasGeneratorMethod.name} should return $newLineSymbol${canvasFilter.result}$newLineSymbol"
+        )
     }
 
     @Test
