@@ -57,17 +57,17 @@ fun safeReadLine(): String = readlnOrNull() ?: error("Your input is incorrect, s
 fun main() {
     // Uncomment this code on the last step of the game
 
-    // val pattern = getPattern()
-    // val generatorName = chooseGenerator()
-    // println("Please input the width of the resulting picture:")
-    // val width = safeReadLine().toInt()
-    // println("Please input the height of the resulting picture:")
-    // val height = safeReadLine().toInt()
+     val pattern = getPattern()
+     val generatorName = chooseGenerator()
+     println("Please input the width of the resulting picture:")
+     val width = safeReadLine().toInt()
+     println("Please input the height of the resulting picture:")
+     val height = safeReadLine().toInt()
 
-    // println("The pattern:$newLineSymbol${pattern.trimIndent()}")
+     println("The pattern:$newLineSymbol${pattern.trimIndent()}")
 
-    // println("The generated image:")
-    // println(applyGenerator(pattern, generatorName, width, height))
+     println("The generated image:")
+     println(applyGenerator(pattern, generatorName, width, height))
 }
 
 fun getPatternHeight(pattern: String): Int = pattern.lines().size
@@ -131,7 +131,7 @@ fun canvasGenerator(pattern: String, width: Int, height: Int): String {
 
 fun canvasWithGapsGenerator(pattern: String, width: Int, height: Int): String {
     if (height == 1) {
-        return repeatHorizontallyWithGaps(pattern, width).dropLast(1)
+        return repeatHorizontallyWithGaps(pattern, width)
     } else if (width == 1) {
         val columnBuilder = StringBuilder()
         repeat (height) {
@@ -208,4 +208,12 @@ fun repeatHorizontallyWithGapsEvenLine(pattern: String, n: Int): String {
     repeated.append("$newLineSymbol")
     val evenRow = repeated.toString()
     return evenRow
+}
+
+fun applyGenerator(pattern: String, generatorName: String, width: Int, height: Int): String {
+    return when (generatorName) {
+        "canvas" -> canvasGenerator(pattern, width, height)
+        "canvasGaps" -> canvasWithGapsGenerator(pattern, width, height)
+        else -> error("Unsupported generator: $generatorName")
+    }
 }

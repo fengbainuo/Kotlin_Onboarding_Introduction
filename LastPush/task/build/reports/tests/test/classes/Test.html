@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">59</div>
+<div class="counter">95</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.595s</div>
+<div class="counter">1.725s</div>
 <p>duration</p>
 </div>
 </td>
@@ -70,12 +70,12 @@
 <div class="tab">
 <h2>Ignored tests</h2>
 <div class="test">
-<a name="canvasWithGapsGeneratorImplementation(String, Filter)"></a>
-<h3 class="skipped">canvasWithGapsGeneratorImplementation(String, Filter)</h3>
+<a name="applyGeneratorImplementation(String, String, Filter)"></a>
+<h3 class="skipped">applyGeneratorImplementation(String, String, Filter)</h3>
 </div>
 <div class="test">
-<a name="canvasWithGapsGeneratorImplementation(String, Filter)[2]"></a>
-<h3 class="skipped">[2] ○, Filter(width=2, height=1, result=○ )</h3>
+<a name="applyGeneratorImplementation(String, String, Filter)[27]"></a>
+<h3 class="skipped">[27] canvasGaps, ○, Filter(width=2, height=1, result=○ )</h3>
 </div>
 </div>
 <div class="tab">
@@ -89,6 +89,435 @@
 <th>Result</th>
 </tr>
 </thead>
+<tr>
+<td class="skipped">applyGeneratorImplementation(String, String, Filter)</td>
+<td class="skipped">applyGeneratorImplementation(String, String, Filter)</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">[10] canvas,  X
+/ \
+\ /
+ X, Filter(width=6, height=8, result= X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X 
+/ \/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /\ /
+ X  X  X  X  X  X )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[10]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[11] canvas,   ____   
+ /    \
+/ /  \ \
+\ \__/ /
+ \____/, Filter(width=1, height=1, result=  ____   
+ /    \  
+/ /  \ \ 
+\ \__/ / 
+ \____/  )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[11]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[12] canvas,   ____   
+ /    \
+/ /  \ \
+\ \__/ /
+ \____/, Filter(width=2, height=1, result=  ____     ____   
+ /    \   /    \  
+/ /  \ \ / /  \ \ 
+\ \__/ / \ \__/ / 
+ \____/   \____/  )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[12]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[13] canvas,   ____   
+ /    \
+/ /  \ \
+\ \__/ /
+ \____/, Filter(width=1, height=2, result=  ____   
+ /    \  
+/ /  \ \ 
+\ \__/ / 
+ \____/  
+ /    \  
+/ /  \ \ 
+\ \__/ / 
+ \____/  )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[13]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[14] canvas,   ____   
+ /    \
+/ /  \ \
+\ \__/ /
+ \____/, Filter(width=5, height=7, result=  ____     ____     ____     ____     ____   
+ /    \   /    \   /    \   /    \   /    \  
+/ /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ 
+\ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / 
+ \____/   \____/   \____/   \____/   \____/  
+ /    \   /    \   /    \   /    \   /    \  
+/ /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ 
+\ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / 
+ \____/   \____/   \____/   \____/   \____/  
+ /    \   /    \   /    \   /    \   /    \  
+/ /  \ \ / /  \ \ …</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[14]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[15] canvas,   ____   
+ /    \
+/ /  \ \
+\ \__/ /
+ \____/, Filter(width=6, height=8, result=  ____     ____     ____     ____     ____     ____   
+ /    \   /    \   /    \   /    \   /    \   /    \  
+/ /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ 
+\ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / 
+ \____/   \____/   \____/   \____/   \____/   \____/  
+ /    \   /    \   /    \   /    \   /    \   /    \  
+/ /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ / /  \ \ 
+\ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / 
+ \____/   \____/   \____/   \____/   \…</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[15]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[16] canvas, +---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+, Filter(width=1, height=1, result=+---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[16]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[17] canvas, +---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+, Filter(width=2, height=1, result=+---+---++---+---+
+| o   o || o   o |
+|   ^   ||   ^   |
+|  ---  ||  ---  |
++---+---++---+---+)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[17]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[18] canvas, +---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+, Filter(width=1, height=2, result=+---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[18]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[19] canvas, +---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+, Filter(width=5, height=7, result=+---+---++---+---++---+---++---+---++---+---+
+| o   o || o   o || o   o || o   o || o   o |
+|   ^   ||   ^   ||   ^   ||   ^   ||   ^   |
+|  ---  ||  ---  ||  ---  ||  ---  ||  ---  |
++---+---++---+---++---+---++---+---++---+---+
+| o   o || o   o || o   o || o   o || o   o |
+|   ^   ||   ^   ||   ^   ||   ^   ||   ^   |
+|  ---  ||  ---  ||  ---  ||  ---  ||  ---  |
++---+---++---+---++---+---++---+---++---+---+
+| o   o || o   o || o   o || o   o || o   o |
+|   ^   ||   ^   |…</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[19]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] canvas, ○, Filter(width=1, height=1, result=○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[1]</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[20] canvas, +---+---+
+| o   o |
+|   ^   |
+|  ---  |
++---+---+, Filter(width=6, height=8, result=+---+---++---+---++---+---++---+---++---+---++---+---+
+| o   o || o   o || o   o || o   o || o   o || o   o |
+|   ^   ||   ^   ||   ^   ||   ^   ||   ^   ||   ^   |
+|  ---  ||  ---  ||  ---  ||  ---  ||  ---  ||  ---  |
++---+---++---+---++---+---++---+---++---+---++---+---+
+| o   o || o   o || o   o || o   o || o   o || o   o |
+|   ^   ||   ^   ||   ^   ||   ^   ||   ^   ||   ^   |
+|  ---  ||  ---  ||  ---  ||  ---  ||  ---  ||  ---  |
++---+---++---+---++---+---++---+---++-…</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[20]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[21] canvas,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+', Filter(width=1, height=1, result=   .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'   )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[21]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[22] canvas,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+', Filter(width=2, height=1, result=   .+------+   .+------+
+ .' |    .'| .' |    .'|
++---+--+'  |+---+--+'  |
+|   |  |   ||   |  |   |
+|  ,+--+---+|  ,+--+---+
+|.'    | .' |.'    | .' 
++------+'   +------+'   )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[22]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[23] canvas,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+', Filter(width=1, height=2, result=   .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'   
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'   )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[23]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[24] canvas,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+', Filter(width=5, height=7, result=   .+------+   .+------+   .+------+   .+------+   .+------+
+ .' |    .'| .' |    .'| .' |    .'| .' |    .'| .' |    .'|
++---+--+'  |+---+--+'  |+---+--+'  |+---+--+'  |+---+--+'  |
+|   |  |   ||   |  |   ||   |  |   ||   |  |   ||   |  |   |
+|  ,+--+---+|  ,+--+---+|  ,+--+---+|  ,+--+---+|  ,+--+---+
+|.'    | .' |.'    | .' |.'    | .' |.'    | .' |.'    | .' 
++------+'   +------+'   +------+'   +------+'   +------+'   
+ .' |    .'| .' |    .'| .' |    .'| .' |    .'| .'…</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[24]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[25] canvas,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+', Filter(width=6, height=8, result=   .+------+   .+------+   .+------+   .+------+   .+------+   .+------+
+ .' |    .'| .' |    .'| .' |    .'| .' |    .'| .' |    .'| .' |    .'|
++---+--+'  |+---+--+'  |+---+--+'  |+---+--+'  |+---+--+'  |+---+--+'  |
+|   |  |   ||   |  |   ||   |  |   ||   |  |   ||   |  |   ||   |  |   |
+|  ,+--+---+|  ,+--+---+|  ,+--+---+|  ,+--+---+|  ,+--+---+|  ,+--+---+
+|.'    | .' |.'    | .' |.'    | .' |.'    | .' |.'    | .' |.'    | .' 
++------+'   +------+'   +------+'   +---…</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[25]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[26] canvasGaps, ○, Filter(width=1, height=1, result=○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[26]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="skipped">[27] canvasGaps, ○, Filter(width=2, height=1, result=○ )</td>
+<td class="skipped">applyGeneratorImplementation(String, String, Filter)[27]</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">[2] canvas, ○, Filter(width=2, height=1, result=○○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[2]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] canvas, ○, Filter(width=1, height=2, result=○
+○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[3]</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] canvas, ○, Filter(width=5, height=7, result=○○○○○
+○○○○○
+○○○○○
+○○○○○
+○○○○○
+○○○○○
+○○○○○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[4]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] canvas, ○, Filter(width=6, height=8, result=○○○○○○
+○○○○○○
+○○○○○○
+○○○○○○
+○○○○○○
+○○○○○○
+○○○○○○
+○○○○○○)</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[5]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] canvas,  X
+/ \
+\ /
+ X, Filter(width=1, height=1, result= X 
+/ \
+\ /
+ X )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] canvas,  X
+/ \
+\ /
+ X, Filter(width=2, height=1, result= X  X 
+/ \/ \
+\ /\ /
+ X  X )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[7]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] canvas,  X
+/ \
+\ /
+ X, Filter(width=1, height=2, result= X 
+/ \
+\ /
+ X 
+/ \
+\ /
+ X )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[8]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] canvas,  X
+/ \
+\ /
+ X, Filter(width=5, height=7, result= X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X 
+/ \/ \/ \/ \/ \
+\ /\ /\ /\ /\ /
+ X  X  X  X  X )</td>
+<td class="success">applyGeneratorImplementation(String, String, Filter)[9]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
 <tr>
 <td class="success">canvasGeneratorFunction()</td>
 <td class="success">canvasGeneratorFunction()</td>
@@ -139,7 +568,7 @@
 \ \__/ / 
  \____/  )</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[11]</td>
-<td class="success">0.001s</td>
+<td class="success">0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -191,7 +620,7 @@
  /    \   /    \   /    \   /    \   /    \  
 / /  \ \ / /  \ \ …</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[14]</td>
-<td class="success">0.002s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -209,7 +638,7 @@
 \ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / \ \__/ / 
  \____/   \____/   \____/   \____/   \…</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[15]</td>
-<td class="success">0.003s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -237,7 +666,7 @@
 |  ---  ||  ---  |
 +---+---++---+---+)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[17]</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -255,7 +684,7 @@
 |  ---  |
 +---+---+)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[18]</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -281,7 +710,7 @@
 <tr>
 <td class="success">[1] ○, Filter(width=1, height=1, result=○)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[1]</td>
-<td class="success">0.007s</td>
+<td class="success">0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -299,7 +728,7 @@
 |  ---  ||  ---  ||  ---  ||  ---  ||  ---  ||  ---  |
 +---+---++---+---++---+---++---+---++-…</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[20]</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -317,7 +746,7 @@
 |.'    | .' 
 +------+'   )</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[21]</td>
-<td class="success">0.002s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -335,7 +764,7 @@
 |.'    | .' |.'    | .' 
 +------+'   +------+'   )</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[22]</td>
-<td class="success">0.009s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -378,7 +807,7 @@
 +------+'   +------+'   +------+'   +------+'   +------+'   
  .' |    .'| .' |    .'| .' |    .'| .' |    .'| .'…</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[24]</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -396,13 +825,13 @@
 |.'    | .' |.'    | .' |.'    | .' |.'    | .' |.'    | .' |.'    | .' 
 +------+'   +------+'   +------+'   +---…</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[25]</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">[2] ○, Filter(width=2, height=1, result=○○)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[2]</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -421,7 +850,7 @@
 ○○○○○
 ○○○○○)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[4]</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -434,7 +863,7 @@
 ○○○○○○
 ○○○○○○)</td>
 <td class="success">canvasGeneratorImplementation(String, Filter)[5]</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -509,37 +938,13 @@
 <tr>
 <td class="success">canvasWithGapsGeneratorFunction()</td>
 <td class="success">canvasWithGapsGeneratorFunction()</td>
-<td class="success">0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="skipped">canvasWithGapsGeneratorImplementation(String, Filter)</td>
-<td class="skipped">canvasWithGapsGeneratorImplementation(String, Filter)</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="success">[1] ○, Filter(width=1, height=1, result=○)</td>
-<td class="success">canvasWithGapsGeneratorImplementation(String, Filter)[1]</td>
-<td class="success">0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="skipped">[2] ○, Filter(width=2, height=1, result=○ )</td>
-<td class="skipped">canvasWithGapsGeneratorImplementation(String, Filter)[2]</td>
-<td class="skipped">-</td>
-<td class="skipped">ignored</td>
-</tr>
-<tr>
-<td class="success">dropTopLineFunction()</td>
-<td class="success">dropTopLineFunction()</td>
-<td class="success">0.013s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">[1] ○, ○</td>
 <td class="success">dropTopLineFunctionImplementation(String, String)[1]</td>
-<td class="success">0.010s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -575,19 +980,19 @@
 <tr>
 <td class="success">fillPatternRowErrorCase()</td>
 <td class="success">fillPatternRowErrorCase()</td>
-<td class="success">0.004s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">fillPatternRowFunction()</td>
 <td class="success">fillPatternRowFunction()</td>
-<td class="success">0.196s</td>
+<td class="success">0.219s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">[1] , 5,      </td>
 <td class="success">fillPatternRowImplementation(String, int, String)[1]</td>
-<td class="success">0.034s</td>
+<td class="success">0.038s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -617,19 +1022,25 @@
 <tr>
 <td class="success">[6] ○○○○○, 5, ○○○○○</td>
 <td class="success">fillPatternRowImplementation(String, int, String)[6]</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getPatternFunction()</td>
+<td class="success">getPatternFunction()</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">getPatternHeightFunction()</td>
 <td class="success">getPatternHeightFunction()</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">[1] ○, 1</td>
 <td class="success">getPatternHeightImplementation(String, int)[1]</td>
-<td class="success">0.003s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -648,7 +1059,7 @@
 \ \__/ /
  \____/, 5</td>
 <td class="success">getPatternHeightImplementation(String, int)[3]</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -670,13 +1081,140 @@
 |.'    | .' 
 +------+', 7</td>
 <td class="success">getPatternHeightImplementation(String, int)[5]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[10] yess
+no
+^_^
+^_^
+, false, ^_^</td>
+<td class="success">getPatternImplementation(String, boolean, String)[10]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[1] yes
+cube
+, true,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[1]</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[2] yes
+cube
+cube
+, false,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[2]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[3] yes
+cube1
+cube
+, true,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[3]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[4] yess
+yes
+cube
+, true,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[4]</td>
 <td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[5] yess
+yes
+cube
+cube
+, false,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[5]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[6] yess
+yes
+cube1
+cube
+, true,    .+------+
+ .' |    .'|
++---+--+'  |
+|   |  |   |
+|  ,+--+---+
+|.'    | .' 
++------+'</td>
+<td class="success">getPatternImplementation(String, boolean, String)[6]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[7] no
+^_^
+, true, ^_^</td>
+<td class="success">getPatternImplementation(String, boolean, String)[7]</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[8] no
+^_^
+^_^
+, false, ^_^</td>
+<td class="success">getPatternImplementation(String, boolean, String)[8]</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">[9] yess
+no
+^_^
+, true, ^_^</td>
+<td class="success">getPatternImplementation(String, boolean, String)[9]</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">repeatHorizontallyFunction()</td>
 <td class="success">repeatHorizontallyFunction()</td>
-<td class="success">0.002s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -730,7 +1268,7 @@
 \ /\ /
  X  X )</td>
 <td class="success">repeatHorizontallyFunctionImplementation(String, Filter)[4]</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -807,6 +1345,12 @@
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
+<tr>
+<td class="success">smokeTest()</td>
+<td class="success">smokeTest()</td>
+<td class="success">0.035s</td>
+<td class="success">passed</td>
+</tr>
 </table>
 </div>
 </div>
@@ -817,7 +1361,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.14</a> at Nov 15, 2025, 1:08:37 PM</p>
+<a href="https://www.gradle.org">Gradle 8.14</a> at Nov 15, 2025, 1:20:31 PM</p>
 </div>
 </div>
 </body>
