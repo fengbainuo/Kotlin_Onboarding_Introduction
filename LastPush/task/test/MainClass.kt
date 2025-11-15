@@ -5,6 +5,7 @@ internal val mainClass = TestClass(
     customMethods = listOf(
         fillPatternRowMethod,
         getPatternHeightMethod,
-        repeatHorizontallyMethod
+        repeatHorizontallyMethod,
+        dropTopLineMethod
     )
 )

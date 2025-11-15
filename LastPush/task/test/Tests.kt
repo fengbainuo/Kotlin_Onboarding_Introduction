@@ -1,6 +1,4 @@
-import jetbrains.kotlin.course.last.push.ball
-import jetbrains.kotlin.course.last.push.getPatternWidth
-import jetbrains.kotlin.course.last.push.newLineSymbol
+import jetbrains.kotlin.course.last.push.*
 import org.jetbrains.academy.test.system.core.invokeWithArgs
 import org.jetbrains.academy.test.system.core.models.classes.findClassSafe
 import org.junit.jupiter.api.Assertions
@@ -35,6 +33,31 @@ class Test {
         fun repeatHorizontallyArguments() = canvas().filter{ (p, f) ->
             f.height == 1
         }.toArguments()
+
+        @JvmStatic
+        fun dropTopLineDataArguments() = dropTopLineData
+    }
+
+    @Test
+    fun dropTopLineFunction() {
+        mainClass.checkMethod(mainClazz, dropTopLineMethod)
+    }
+
+    @ParameterizedTest
+    @MethodSource("dropTopLineDataArguments")
+    fun dropTopLineFunctionImplementation(
+        image: String,
+        expected: String
+    ) {
+        val userMethod = mainClass.findMethod(mainClazz, dropTopLineMethod)
+        val patternWidth = getPatternWidth(image)
+        val patternHeight = getPatternHeight(image)
+        val actualResult = userMethod.invokeWithArgs(image.replaceLineSeparator(), 1, patternHeight, patternWidth, clazz = mainClazz).toString()
+        val error = "The method ${dropTopLineMethod.name} with arguments image=${newLineSymbol}$image${newLineSymbol}, width=1, patternHeight=$patternHeight, patternWidth=$patternWidth should return$newLineSymbol$expected${newLineSymbol}But it returns$newLineSymbol$actualResult"
+        Assertions.assertEquals(
+            expected.replaceLineSeparator(),
+            actualResult.replaceLineSeparator()
+        ) { error }
     }
 
     @Test

@@ -85,6 +85,20 @@ fun fillPatternRow(patternRow: String, patternWidth: Int): String {
     return newPattern
 }
 
-fun repeatHorizontally(patter: String, n: Int, patternWidth: Int): String {
-
+fun repeatHorizontally(pattern: String, n: Int, patternWidth: Int): String {
+    val lines = pattern.lines()
+    val builder = StringBuilder()
+    for (line in lines) {
+        val newLine = if (line.length < patternWidth) {
+            fillPatternRow(line, patternWidth)
+        } else {
+            line
+        }
+        repeat(n) {
+            builder.append(newLine)
+        }
+        builder.append("$newLineSymbol")
+    }
+    val newPattern = builder.toString()
+    return newPattern
 }

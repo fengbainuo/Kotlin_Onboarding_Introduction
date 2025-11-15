@@ -24,6 +24,17 @@ internal val repeatHorizontallyMethod = TestMethod(
     ),
 )
 
+internal val dropTopLineMethod = TestMethod(
+    "dropTopLine",
+    TestKotlinType("String"),
+    listOf(
+        TestVariable("image", "String"),
+        TestVariable("width", "Int"),
+        TestVariable("patternHeight", "Int"),
+        TestVariable("patternWidth", "Int"),
+    ),
+)
+
 internal fun canvas() = Pattern.values()
     .flatMap { f -> f.canvasFilters.map { f.pattern to it } }
 
